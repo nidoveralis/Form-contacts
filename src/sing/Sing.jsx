@@ -1,5 +1,5 @@
 import React from 'react';
-import'./comein.scss';
+import'./main.scss';
 
 
 

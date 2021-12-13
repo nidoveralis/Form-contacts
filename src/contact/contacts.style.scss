@@ -19,13 +19,13 @@
     @extend %white-bl;
     flex-direction: column;
     width: 720px;
-    height: 500px;
+    min-height: 500px;
 }
 .contacts-btn{
     width: 90px;
     height: 20px;
     @extend %flex-style;
-    justify-content: space-around
+    justify-content: space-between;
 }
 .contact{
     @extend %flex-style;
@@ -42,7 +42,14 @@
     background-size: 100%;
 }
 .add{
-    margin-bottom: 0;
+    @extend%gradient;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 .del,span{
     @extend %btn;

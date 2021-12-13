@@ -1,0 +1,14 @@
+@import '../index.scss';
+form{
+    @extend %flex-style;
+    width: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+    input{
+        height: 40px;
+        width: 250px;
+    }
+    .contacts-btn{
+        width: 190px;
+    }
+}
