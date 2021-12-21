@@ -27,6 +27,10 @@
     @extend %flex-style;
     justify-content: space-between;
 }
+
+.wcontact{
+    width: 720px
+}
 .contact{
     @extend %flex-style;
     justify-content: space-around;
