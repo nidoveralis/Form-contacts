@@ -8,13 +8,13 @@ import '../sing/main.scss';
 
 const Add = ({onChange})=>{
 
-    
-    
-    const [user,setUser]=useState([])
+    const [user,setUser]=useState({})
    
-    const qqq=(e)=>{
+    const getInputs=(e)=>{
         const {name,value}=e.currentTarget
         setUser({...user,[name]:value})
+    }
+    const sedContact=()=>{
         onChange(user)
     }
         return(
@@ -24,12 +24,12 @@ const Add = ({onChange})=>{
                     
                         <form > 
                             <label>Введите имя</label>
-                            <input name='name' type='text' value={user.name} onChange={qqq}></input>
+                            <input name='name' type='text' value={user.name} onChange={getInputs}></input>
                             <label>Введите фамилию</label>
-                            <input name='surname' type='text' value={user.surname} onChange={qqq} ></input>
+                            <input name='surname' type='text' value={user.surname} onChange={getInputs} ></input>
                             <label>Введите телефон</label>
-                            <input name='phone' type='text' value={user.phone} onChange={qqq}></input>
-                            <button className='entry-login' type='button' onClick={qqq}>Сохранить</button>
+                            <input name='phone' type='text' value={user.phone} onChange={getInputs}></input>
+                            <button className='entry-login' type='button' onClick={sedContact}>Сохранить</button>
                             
                         </form>
                     </div>
